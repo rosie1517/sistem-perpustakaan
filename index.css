@@ -1,0 +1,130 @@
+/* Gaya Umum */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d4edda, #a5d6a7);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 128, 0, 0.3);
+  margin-top: 40px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 30px rgba(0, 128, 0, 0.5);
+}
+
+h1, h2 {
+  color: #145a32;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Tombol */
+button, .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  color: white;
+  font-weight: bold;
+  box-shadow: 4px 4px 12px rgba(0, 128, 0, 0.4);
+}
+
+.btn-tambah { background-color: #28a745; }
+.btn-hapus { background-color: #dc3545; }
+.btn-edit { background-color: #ffc107; }
+.btn-riwayat { background-color: #17a2b8; }
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 18px rgba(0, 128, 0, 0.5);
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0, 128, 0, 0.3);
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 2px solid #c8e6c9;
+}
+
+th {
+  background-color: #145a32;
+  color: white;
+  font-size: 18px;
+}
+
+tr:hover {
+  background-color: #d4edda;
+  transition: 0.3s;
+}
+
+/* Form Input */
+input[type="text"], input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 14px 0;
+  border: 2px solid #81c784;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.6);
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.08);
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+  table {
+    font-size: 14px;
+  }
+  button, .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
